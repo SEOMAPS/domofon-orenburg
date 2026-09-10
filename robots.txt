@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://domofon56.ru/sitemap.xml
+Host: https://domofon56.ru

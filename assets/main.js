@@ -50,7 +50,10 @@
             document.getElementById('policyModalOverlay').classList.remove('active');
         }
 
-        document.getElementById('policyModalOverlay').addEventListener('click', (e) => {
-            if (e.target.id === 'policyModalOverlay') closePolicyModal();
-        });
+        const policyOverlay = document.getElementById('policyModalOverlay');
+        if (policyOverlay) {
+            policyOverlay.addEventListener('click', (e) => {
+                if (e.target.id === 'policyModalOverlay') closePolicyModal();
+            });
+        }
 
