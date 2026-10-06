@@ -545,3 +545,107 @@
 .service-more a {
     font-weight: 600;
 }
+
+
+        /* ===== Изображения ключей (фото типов ключей, статьи) ===== */
+        .key-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 20px 0 30px;
+        }
+
+        .key-gallery figure {
+            background: #fff;
+            border: 1px solid #e6e6e6;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .key-gallery img,
+        .article-figure img,
+        .card-photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            background: #f4f4f4;
+        }
+
+        .key-gallery figure img {
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            background: #fff;
+        }
+
+        .key-gallery figcaption {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 14px 16px 18px;
+            font-size: 15px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .key-gallery figcaption strong {
+            display: block;
+            font-size: 17px;
+            color: var(--text-color);
+            margin-bottom: 4px;
+        }
+
+        .key-gallery .key-price {
+            display: inline-block;
+            margin-top: auto;
+            padding: 3px 10px;
+            background: var(--primary-color);
+            color: var(--dark-color);
+            font-weight: 700;
+            border-radius: 4px;
+        }
+
+        .article-figure {
+            max-width: 380px;
+            margin: 10px auto 25px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .article-figure figcaption {
+            padding: 10px 14px;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+
+        .card-photo {
+            margin: -25px -25px 18px;
+            overflow: hidden;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .answer-lead {
+            font-size: 18px;
+            color: var(--text-color);
+            background: #fffbe6;
+            border-left: 5px solid var(--primary-color);
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* Фото в карточках: ограниченная высота, без обрезки ключей */
+        .card-photo img {
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            background: #fff;
+        }
